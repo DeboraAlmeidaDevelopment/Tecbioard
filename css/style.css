@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "unbounded";
+    src: url('../fonts/Unbounded-Bold.ttf')
+    format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url('../fonts/Poppins-Regular.ttf')
+    format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0E1014;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px 360px 0 360px;
+}
+
+h1 {
+    font-family: 'unbounded', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+span {
+    color: #9747FF
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+a {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #F5F5F5;
+    background-color: #9747FF;
+    display: block;
+    text-align: center;
+    padding: 24px 48px;
+    border-radius: 36px;
+    line-height: 18px;
+    width: 244px;
+    margin: 40px auto;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+section img {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 60px;
+    }
+
+    header .logo {
+        margin-top: 65px;
+    }
+    
+    header .thema-icon {
+        margin-top: 60px;
+    }
+
+    p {
+        margin: 24px 60px 0;
+    }
+}
+
+@media(max-width: 365px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 32px 16px 0;
+    }
+
+    header .logo, header .thema-icon {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        width: 341px;
+        margin: 24px 17px 0;
+    }
+
+    a {
+        font-size: 20px;
+        padding: 24px;
+        margin: 62px 45px;
+        width: 203px;
+    }
+
+    section img {
+        width: 330px;
+        height: 230px;
+    }
+}
